@@ -1,0 +1,53 @@
+# R history files
+.Rhistory
+.Rapp.history
+
+# Session data
+.RData
+.Rds
+
+# RStudio files
+.Rproj.user/
+.Rproj.user/*
+*.Rproj.user
+
+# RStudio project file (optional to ignore)
+# *.Rproj
+
+# Temporary files
+*.utf8.md
+*.knit.md
+*.log
+
+# Compiled output
+*.o
+*.so
+*.dll
+
+# HTML, LaTeX, knitr build artefacts
+*.aux
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+
+# Quarto / RMarkdown caches
+*_cache/
+cache/
+*.png
+
+# Data that should not be committed
+*.csv
+*.tsv
+*.rds
+*.RData
+*.sav
+
+# OS-specific files
+.DS_Store
+Thumbs.db
