@@ -40,7 +40,7 @@ for (m in seq_len(M)) {
 mean_S   <- mean(S)
 sd_S     <- sd(S)
 median_S <- median(S)
-skew_S   <- mean((S - mean_S)^3) / (sd_S^3)   # populatin style skewness estimate
+skew_S   <- mean((S - mean_S)^3) / (sd_S^3)   # population style skewness estimate
 # This is completely acceptable and commonly used because:
 # M is large (100 000), so the bias correction is negligible
 # the purpose is descriptive, not classical inference
