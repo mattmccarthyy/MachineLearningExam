@@ -9,7 +9,7 @@ y <- Pima.tr$type # response (Yes / No)
 
 
 ###############################################################################
-# (a) Is this a regression or classification problem?
+# a). Is this a regression or classification problem?
 ###############################################################################
 # y contains diabetes status ("Yes"/"No"), i.e. a categorical / binary outcome.
 # Predicting y from the numeric measurements in x is therefore a
@@ -17,7 +17,7 @@ y <- Pima.tr$type # response (Yes / No)
 
 
 ###############################################################################
-# (b) k-means clustering of x into k = 2 clusters
+# b). k-means clustering of x into k = 2 clusters
 ###############################################################################
 set.seed(4060)
 
@@ -46,7 +46,7 @@ table(cluster = km2$cluster, class = y)
 
 
 ###############################################################################
-# (c) Comment on spatial distribution and cluster membership
+# c). Comment on spatial distribution and cluster membership
 ###############################################################################
 # From the scatterplot (npreg vs glu), the two clusters separate mainly in the
 # vertical direction: red points (cluster 2) tend to have higher glucose (glu),
@@ -59,7 +59,7 @@ table(cluster = km2$cluster, class = y)
 
 
 ###############################################################################
-# (d) Scaled PCA on x: number of PCs capturing 90% of the information
+# d). Scaled PCA on x: number of PCs capturing 90% of the information
 ###############################################################################
 pca_sc <- prcomp(x, scale. = TRUE)
 
@@ -84,7 +84,7 @@ num_pc_90
 
 
 ###############################################################################
-# (e) Unscaled PCA on x: variables mainly influencing first two PCs
+# e). Unscaled PCA on x: variables mainly influencing first two PCs
 ###############################################################################
 pca_un <- prcomp(x, scale. = FALSE)
 loadings_12 <- pca_un$rotation[, 1:2]
