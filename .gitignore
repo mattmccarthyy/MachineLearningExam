@@ -11,6 +11,7 @@
 .Rproj.user/
 .Rproj.user/*
 *.Rproj.user
+.Rproj.user
 
 # RStudio project file (optional to ignore)
 # *.Rproj
